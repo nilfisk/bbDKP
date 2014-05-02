@@ -1269,6 +1269,7 @@ class Members extends \bbdkp\admin\Admin
 		}
 
 
+
 		// get the members to update
 		$to_update = array_intersect($newmembers, $oldmembers);
 		foreach($memberdata as $mb)
@@ -1322,6 +1323,11 @@ class Members extends \bbdkp\admin\Admin
 				$db->sql_query($sql);
 			}
 		}
+
+        $db->sql_transaction('commit');
+
+
+
 	}
 
 	/**
