@@ -31,8 +31,6 @@
 			<target-version>3.0.12</target-version>
 		</installation>
 		<link-group>
-			<link type="parent" lang="en" href="../../install.xml">Install guide</link>
-			<link type="parent" lang="de" href="../../install.xml">Installations-Anleitung</link>			
 			<link type="language" lang="en" href="contrib/de.xml">Update English language to bbdkp 1.3.0.2</link>
 			<link type="language" lang="de" href="contrib/de.xml">Aktualisiere deutsche Sprachdateien für bbdkp 1.3.0.2</link>
 		</link-group>	
