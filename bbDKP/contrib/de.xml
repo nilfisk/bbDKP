@@ -29,7 +29,6 @@
 		</installation>
 		<link-group>
 			<link type="parent" href="../install.xml" lang="en">Installation manual</link>
-			<link type="parent" href="../install.xml" lang="fr">Manuel d’installation</link>
 			<link type="parent" href="../install.xml" lang="de">Installationshinweise</link>
 		</link-group>
 	</header>
