@@ -22,7 +22,7 @@ Further development requests, support questions are welcome at http://www.bbdkp.
 
 We ask that you retain the copyright notice in overall_footer.html in any Styles you use. It will help build interest in the bbDKP project, and is required for obtaining support.
 
-bbDKP (c) 2014 Sajaki, Killerpommes, frederikkunze, Cecilius
+bbDKP (c) 2014 Sajaki, Killerpommes, frederikkunze, Cecilius, Lucasari
 bbDKP (c) 2011 Sajaki, Blazeflack
 bbDKP (c) 2009 Sajaki, Kapli, Hroar, Malfate
 bbDKP (c) 2008 Sajaki, Malfate, Kapli
@@ -33,7 +33,7 @@ Les Plugins : bbTips (Wow), Raidtracker (wow), Bossprogress, Formulaire de Recru
 Pour de plus amples détails, veuillez consulter le changelog. Demandes de développement, questions de support sont les bienvenues à http://www.bbdkp.com ou chez @bbDKP sur Twitter.
 
 Veuillez montrer le la notice de copyright dans overall_footer.html dans les Styles que vous utilisez. Ceci aide à soutenir l’intérêt dans le projèt bbDKP et c’est requis afin d’obtenir du support.
-bbDKP (c) 2014 Sajaki, Killerpommes, frederikkunze, Cecilius
+bbDKP (c) 2014 Sajaki, Killerpommes, frederikkunze, Cecilius, Lucasari
 bbDKP (c) 2011 Sajaki, Blazeflack
 bbDKP (c) 2009 Sajaki, Kapli, Hroar, Malfate
 bbDKP (c) 2008 Sajaki, Malfate, Kapli
@@ -48,15 +48,30 @@ EQDkp (c) 2003 The EqDkp Project Team]]></description>
 		Übersicht der DKP Punkte pro Spieler, Raidsliste, Ereignisliste, Gegenstandswerte, Historiken,
 		Raidstatistiken, Gildenarsenalseite, ACP Modulen: Vorhandene Plugins : Bossvorgang, bbTips (tooltips), Raidtracker (wow), Rekrutierungsformular, Raidplaner. Für weitere Entwicklungsanfragen und Support heissen wir Sie wilkommen auf unsere internetseite http://www.bbdkp.com oder bei @bbDKP auf Twitter.
 Bitte zeige den copyright link in overall_footer.html in den Stylen die gebraucht werden. Es hilft dabei, Interesse in bbDKP zu verbreiten und ist erforderlich falls du Support bekommen willst.
-bbDKP (c) 2014 Sajaki, Killerpommes, frederikkunze, Cecilius
+bbDKP (c) 2014 Sajaki, Killerpommes, frederikkunze, Cecilius, Lucasari
 bbDKP (c) 2011 Sajaki, Blazeflack
 bbDKP (c) 2009 Sajaki, Kapli, Hroar, Malfate
 bbDKP (c) 2008 Sajaki, Malfate, Kapli
 bbDKP (c) 2007 Ippeh, Teksonic, Monkeytech, DWKN
 EQDkp (c) 2003 The EqDkp Project Team]]></description>
+
+		<description lang="it"><![CDATA[bbDKP 1.3.1 è un sistema DKP per il tuo forum PhpBB3; Caratteristiche: multi-piscina, punti DKP standard per il tempo trascorso, Zero Sum e EPGP. Aiuta a gestire la loro corporazioni Guild, ovvero il monitoraggio della partecipazione dei soci in raid, l'acquisto di oggetti di gestione, e molte altre statistiche. Si aggiorna e integra le funzioni di gestione, e li integra in PhpBB3. Ciò fornirà agli utenti un punto centralizzato di DKP così come l'accesso forum, e come il leader Amministratore o Raid riceve un interfaccia chiara e solida e nessuna preoccupazione per l'integrazione. Sosteniamo Giochi Aion, DAoC, EQ, EQ2, FFXI, LOTRO, all'avanguardia, warhammer, World of Warcraft, Rift, SW: TOR, Lineage 2, TERA, FFXIV. Elenco non esaustivo delle caratteristiche: Più gruppi DKP e Gilde, punti Tribune DKP Raids, eventi, oggetti di valore, oggetti Storia, Statistiche Raids, pagina Avanzate Boss, Armory, PCA modulo di backup, Import EQDKP + .
+Plugins: bbTips (Wow) Raidtracker (wow) Bossprogress, Assunzione Form, Calendar
+Per ulteriori dettagli, consultare il changelog. Domande sviluppo di applicazioni, supporto sono invitati a http://www.bbdkp.com o @ bbDKP su Twitter.
+
+Si prega di mostrare l'avviso di copyright in overall_footer.html negli stili che si usa. Ciò contribuisce a sostenere l'interesse nel progetto e bbDKP è necessaria al fine di ottenere supporto.
+bbDKP (c) 2014 Sajaki, Killerpommes, frederikkunze, Cecilius, Lucasari
+bbDKP (c) 2011 Sajaki, Blazeflack
+bbDKP (c) 2009 Sajaki, Kapli, Hroar, Malfate
+bbDKP (c) 2008 Sajaki, Malfate, Kapli
+bbDKP (c) 2007 Ippeh, Teksonic, Monkeytech, DWKN
+EQDkp (c) 2003 The EqDkp Project Team]]></description>
+
+
 		<author-notes lang="en"><![CDATA[Requirements : phpBB3 v3.0.x, Automod, UMIL,  PHP 5.3.3, Curl; Please read /docs/readme.pdf before beginning]]></author-notes>
 	<author-notes lang="fr"><![CDATA[Requis : phpBB3 v3.0.x, Automod, UMIL, PHP 5.3.3, Curl; Veuillez lire /docs/readme.pdf avant de commencer]]></author-notes>
 		<author-notes lang="de"><![CDATA[Benötigt : phpBB3 v3.0.x, Automod, UMIL, PHP 5.3.3, Curl; Bitte lesen sie /docs/readme.pdf bevor.]]></author-notes>
+		<author-notes lang="it"><![CDATA[requisiti : phpBB3 v3.0.x, Automod, UMIL, PHP 5.3.3, Curl; Si prega di leggere /docs/readme.pdf.]]></author-notes>				
 	<github>https://github.com/bbdkp/bbdkp</github>
 		<author-group>
 			<author>
@@ -440,5 +455,8 @@ le guide d’installation est ici: /docs/readme.pdf
 1) öffne install/index.php und klicke auf Install oder Update.
 2) lösche oder umbenenne das Installations-Verzeichnis „install"
 ]]></diy-instructions>
+
+<diy-instructions lang="it"><![CDATA[Eseguire il programma di installazione del database install/index.php]]></diy-instructions>
+
 </action-group>
 </mod>

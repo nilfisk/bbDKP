@@ -7,6 +7,7 @@
 		<title lang="en">bbDKP 1.3.1 - Update from bbdkp 1.3.0.5</title>
 		<title lang="de">bbDKP 1.3.1 - Update von bbdkp 1.3.0.5</title>
 		<title lang="fr">bbDKP 1.3.1 - mise à jour depuis bbdkp 1.3.0.5</title>
+		<title lang="fr">bbDKP 1.3.1 - aggiornati bbdkp 1.3.0.5</title>
 		<description lang="en">bbDKP 1.3.1 is a Dragon Kill system Mod for your phpBB3 Bulletin board.
 1.3.1 xx-06-2014
 
@@ -14,12 +15,14 @@
     #223 update constants file
     #212 Italian translation
 </description>
-		<author-notes lang="en">I hope you get everything working. Further developement or questions are welcome at www.bbdkp.com
+		<author-notes lang="en">I hope you get everything working. Further developement or questions are welcome at at http://www.bbdkp.com or @bbDKP on Twitter
 		</author-notes>
-		<author-notes lang="de">Ich hoffe ihr habt Spaß an bbDKP. Neuen Vorschläge und Fragen könnt ihr auf www.bbdkp.com posten.
+		<author-notes lang="de">Ich hoffe ihr habt Spaß an bbDKP. Neuen Vorschläge und Fragen könnt ihr auf www.bbdkp.com oder @bbDKP auf Twitter.
 		</author-notes>		
-		<author-notes lang="de">Ich hoffe ihr habt Spaß an bbDKP. Neuen Vorschläge und Fragen könnt ihr auf www.bbdkp.com posten.
+		<author-notes lang="fr">Demandes de développement, questions de support sont les bienvenues à http://www.bbdkp.com ou chez @bbDKP sur Twitter.
 		</author-notes>
+		<author-notes lang="it">Spero che si ottiene tutto funziona. Ulteriori developement o domande sono i benvenuti al www.bbdkp.com.
+		</author-notes>		
 		<github>https://github.com/bbdkp/bbdkp</github>
 		<author-group>
 		<author>
@@ -39,8 +42,9 @@
 			<target-version>3.0.12</target-version>
 		</installation>
 		<link-group>
-			<link type="language" lang="de" href="contrib/de.xml">Sprachdateien für bbdkp 1.3.1</link>
-			<link type="language" lang="fr" href="contrib/fr.xml">mise à jour fichiers langue 1.3.1</link>
+			<link type="language" lang="de" href="contrib/de.xml">DE Sprachdateien für bbdkp 1.3.1</link>
+			<link type="language" lang="fr" href="contrib/fr.xml">FR mise à jour fichiers langue 1.3.1</link>					
+			<link type="language" lang="it" href="contrib/it.xml">IT file di lingua aggiornati bbdkp 1.3.1</link>				
 		</link-group>	
 	</header>
 	<action-group>
@@ -67,8 +71,9 @@
 			<file name="root/styles/prosilver/template/dkp/findrank.php"/>									
 		</delete>
 		<php-installer>install/index.php</php-installer>
-		<diy-instructions lang="fr"><![CDATA[navigue vers install/index.php et execute la mise à jour.]]></diy-instructions>
-		<diy-instructions lang="de"><![CDATA[Rufe install/index.php auf und führe die Aktualisierung aus.]]></diy-instructions>
-		<diy-instructions lang="en"><![CDATA[Browse to install/index.php and run the Updater.]]></diy-instructions>
+		<diy-instructions lang="fr"><![CDATA[FR navigue vers install/index.php et execute la mise à jour.]]></diy-instructions>
+		<diy-instructions lang="de"><![CDATA[DE Rufe install/index.php auf und führe die Aktualisierung aus.]]></diy-instructions>
+		<diy-instructions lang="en"><![CDATA[EN Browse to install/index.php and run the Updater.]]></diy-instructions>
+		<diy-instructions lang="it"><![CDATA[IT Sfoglia per install/index.php ed eseguire Updater.]]></diy-instructions>		
 	</action-group>
 </mod>
