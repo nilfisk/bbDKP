@@ -4,15 +4,15 @@
 <mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.phpbb.com/mods/xml/modx-1.2.6.xsd">
 	<header>
 		<license>http://opensource.org/licenses/gpl-license.php GNU General Public License v2</license>
-		<title lang="en">bbDKP 1.3.0.5 - Update from bbdkp 1.3.0.4</title>
-		<title lang="de">bbDKP 1.3.0.5 - Update von bbdkp 1.3.0.4</title>
-		<title lang="fr">bbDKP 1.3.0.5 - mise à jour depuis bbdkp 1.3.0.4</title>
-		<description lang="en">bbDKP 1.3.0.5 is a Dragon Kill system Mod for your phpBB3 Bulletin board.
-1.3.0.5 07-06-2014
+		<title lang="en">bbDKP 1.3.1 - Update from bbdkp 1.3.0.5</title>
+		<title lang="de">bbDKP 1.3.1 - Update von bbdkp 1.3.0.5</title>
+		<title lang="fr">bbDKP 1.3.1 - mise à jour depuis bbdkp 1.3.0.5</title>
+		<description lang="en">bbDKP 1.3.1 is a Dragon Kill system Mod for your phpBB3 Bulletin board.
+1.3.1 xx-06-2014
 
--	[UPD] #224 paths adapted to Planner 0.12
--	[FIX] #222 sql error in UCP: fields were missing in ACP and UCP, affected every game.  
--	[UPD] Updated SWTOR max. level to 55.  
+    #228 Integrate Deathwing, Jade, pbWoW2 into core
+    #223 update constants file
+    #212 Italian translation
 </description>
 		<author-notes lang="en">I hope you get everything working. Further developement or questions are welcome at www.bbdkp.com
 		</author-notes>
@@ -32,15 +32,15 @@
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>1.3.0.5</mod-version>
+		<mod-version>1.3.1</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>60</time>
 			<target-version>3.0.12</target-version>
 		</installation>
 		<link-group>
-			<link type="language" lang="de" href="contrib/de.xml">Sprachdateien für bbdkp 1.3.0.5</link>
-			<link type="language" lang="fr" href="contrib/fr.xml">mise à jour fichiers langue 1.3.0.5</link>
+			<link type="language" lang="de" href="contrib/de.xml">Sprachdateien für bbdkp 1.3.1</link>
+			<link type="language" lang="fr" href="contrib/fr.xml">mise à jour fichiers langue 1.3.1</link>
 		</link-group>	
 	</header>
 	<action-group>
