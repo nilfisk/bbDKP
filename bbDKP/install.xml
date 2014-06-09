@@ -430,8 +430,8 @@ function get_bbchar($bbresult)
 		<open src="includes/functions.php">
 			<edit>
 				<comment lang="en"><![CDATA[adding cronjobs in footer function]]></comment>
-				<comment lang="en"><![CDATA[ajouter cronjobs dans la fonction footer]]></comment>
-				<comment lang="en"><![CDATA[zufügen Cronjobs in die footer Funktion]]></comment>
+				<comment lang="fr"><![CDATA[ajouter cronjobs dans la fonction footer]]></comment>
+				<comment lang="de"><![CDATA[zufügen Cronjobs in die footer Funktion]]></comment>
 				<find><![CDATA[			$cron_type = 'tidy_sessions';
 		}]]></find>
 				<action type="after-add"><![CDATA[		// bbDKP cron job
@@ -450,7 +450,7 @@ Please see the full installation notes here: /docs/readme.pdf
 ]]></diy-instructions>
 		<diy-instructions lang="fr"><![CDATA[maintenant lance l'installateur database /install/index.php
 le guide d’installation est ici: /docs/readme.pdf
-]></diy-instructions>
+]]></diy-instructions>
 		<diy-instructions lang="de"><![CDATA[Jetzt nur noch die Datenbank Installierung :
 1) öffne install/index.php und klicke auf Install oder Update.
 2) lösche oder umbenenne das Installations-Verzeichnis „install"
