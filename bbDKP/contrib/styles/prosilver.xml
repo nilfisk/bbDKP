@@ -9,14 +9,17 @@
 		<title lang="en"><![CDATA[bbDKP - Prosilver]]></title>
 		<title lang="de"><![CDATA[bbDKP - Prosilver]]></title>
 		<title lang="fr"><![CDATA[bbDKP - Prosilver]]></title>
+		
 		<description lang="en"><![CDATA[adds bbDKP to Prosilver]]></description>
 		<description lang="fr"><![CDATA[ajoute bbDKP à Prosilver]]></description>
 		<description lang="de"><![CDATA[installiert bbDKP zu Prosilver]]></description>
 		<description lang="it"><![CDATA[installere bbDKP Prosilver]]></description>
+		
 		<author-notes lang="en"><![CDATA[requires bbDKP 1.3.0.5]]></author-notes>
 		<author-notes lang="fr"><![CDATA[nécessite bbDKP 1.3.0.5]]></author-notes>
 		<author-notes lang="de"><![CDATA[benötigt bbDKP 1.3.0.5]]></author-notes>
 		<author-notes lang="it"><![CDATA[necessita bbDKP 1.3.0.5]]></author-notes>
+		
 		<author-group>
 			<author>
 				<realname><![CDATA[Andreas]]></realname>
@@ -25,16 +28,14 @@
 				<email><![CDATA[sajaki9@gmail.com]]></email>
 			</author>
 		</author-group>
-		<mod-version>1.3.0.5</mod-version>
+		<mod-version>1.3.1</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>60</time>
 			<target-version>3.0.12</target-version>
 		</installation>
 		<link-group>
-			<link type="parent" lang="en" href="../install.xml">Install instructions</link>
-			<link type="parent" lang="fr" href="../install.xml">Manuel d'installation</link>
-			<link type="parent" lang="de" href="../install.xml">Installations-Anleitung</link>
+			<link type="parent" lang="en" href="../../install_mod.xml">Install instructions</link>
     	</link-group>
 	</header>
 	<action-group>

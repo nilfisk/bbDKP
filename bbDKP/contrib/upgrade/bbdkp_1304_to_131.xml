@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD. Although MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD. No support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.phpbb.com/mods/xml/modx-1.2.6.xsd">
+	<header>
+		<license>http://opensource.org/licenses/gpl-license.php GNU General Public License v2</license>
+		<title lang="en">bbDKP 1.3.1 - Update from bbdkp 1.3.0.4</title>
+		<title lang="de">bbDKP 1.3.1 - Update von bbdkp 1.3.0.4</title>
+		<title lang="fr">bbDKP 1.3.1 - mise à jour depuis bbdkp 1.3.0.4</title>
+		<title lang="it">bbDKP 1.3.1 - aggiornati bbdkp 1.3.0.4</title>
+		<description lang="en">bbDKP 1.3.1 is a Dragon Kill system Mod for your phpBB3 Bulletin board.
+1.3.1 xx-06-2014
+
+    #228 Integrate Deathwing, Jade, pbWoW2 into core
+    #223 update constants file
+    #212 Italian translation
+</description>
+		<author-notes lang="en">I hope you get everything working. Further developement or questions are welcome at at http://www.bbdkp.com or @bbDKP on Twitter
+		</author-notes>
+		<author-notes lang="de">Ich hoffe ihr habt Spaß an bbDKP. Neuen Vorschläge und Fragen könnt ihr auf www.bbdkp.com oder @bbDKP auf Twitter.
+		</author-notes>		
+		<author-notes lang="fr">Demandes de développement, questions de support sont les bienvenues à http://www.bbdkp.com ou chez @bbDKP sur Twitter.
+		</author-notes>
+		<author-notes lang="it">Spero che si ottiene tutto funziona. Ulteriori developement o domande sono i benvenuti al www.bbdkp.com.
+		</author-notes>		
+		<github>https://github.com/bbdkp/bbdkp</github>
+		<author-group>
+		<author>
+				<realname><![CDATA[Andreas]]></realname>
+				<username><![CDATA[Sajaki]]></username>
+				<homepage><![CDATA[http://www.bbdkp.com]]></homepage>
+				<email><![CDATA[sajaki9@gmail.com]]></email>
+				<contributions-group>
+					<contributions status="current" from="2008-04-04" position="Developer"/>
+				</contributions-group>
+			</author>
+		</author-group>
+		<mod-version>1.3.1</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>60</time>
+			<target-version>3.0.12</target-version>
+		</installation>
+		<link-group>
+			<link type="parent" href="../../install_mod.xml" lang="en">bbdkp Install Instructions</link>		
+		</link-group>	
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/adm/style/dkp/acp_mm_addmember.html" to="adm/style/dkp/acp_mm_addmember.html"/>
+			<file from="root/adm/style/dkp/findrank.php" to="adm/style/dkp/findrank.php"/>				
+			<file from="root/includes/acp/acp_dkp_mm.php" to="includes/acp/acp_dkp_mm.php"/>			
+			<file from="root/includes/bbdkp/block/blockFactory.php" to="includes/bbdkp/block/blockFactory.php"/>
+			<file from="root/includes/bbdkp/controller/games/library/install_swtor.php" to="includes/bbdkp/controller/games/library/install_swtor.php"/>
+			<file from="root/includes/bbdkp/controller/members/Members.php" to="includes/bbdkp/controller/members/Members.php"/>
+			<file from="root/includes/bbdkp/controller/guilds/Guilds.php" to="includes/bbdkp/controller/guilds/Guilds.php"/>			
+			<file from="root/includes/bbdkp/views/viewFactory.php" to="includes/bbdkp/views/viewFactory.php"/>
+			<file from="root/includes/bbdkp/views/viewRoster.php" to="includes/bbdkp/views/viewRoster.php"/>			
+			<file from="root/includes/ucp/ucp_dkp.php" to="includes/ucp/ucp_dkp.php"/>						
+			<file from="root/install/index.php" to="install/index.php"/>						
+			<file from="root/language/de/mods/dkp_common.php" to="language/de/mods/dkp_common.php"/>						
+			<file from="root/language/en/mods/dkp_common.php" to="language/en/mods/dkp_common.php"/>						
+			<file from="root/language/fr/mods/dkp_common.php" to="language/fr/mods/dkp_common.php"/>												
+			<file from="root/styles/prosilver/template/dkp/ucp_dkp_charadd.html" to="styles/prosilver/template/dkp/ucp_dkp_charadd.html"/>	
+			<file from="root/styles/prosilver/template/dkp/ucp_dkp.html" to="styles/prosilver/template/dkp/ucp_dkp.html"/>		
+			<file from="root/styles/prosilver/template/dkp/findGameRank.php" to="styles/prosilver/template/dkp/findGameRank.php"/>									
+		</copy>
+		<delete>
+			<file name="root/styles/prosilver/template/dkp/findrank.php"/>									
+		</delete>
+		<php-installer>install/index.php</php-installer>
+		<diy-instructions lang="fr"><![CDATA[FR navigue vers install/index.php et execute la mise à jour.]]></diy-instructions>
+		<diy-instructions lang="de"><![CDATA[DE Rufe install/index.php auf und führe die Aktualisierung aus.]]></diy-instructions>
+		<diy-instructions lang="en"><![CDATA[EN Browse to install/index.php and run the Updater.]]></diy-instructions>
+		<diy-instructions lang="it"><![CDATA[IT Sfoglia per install/index.php ed eseguire Updater.]]></diy-instructions>		
+	</action-group>
+</mod>

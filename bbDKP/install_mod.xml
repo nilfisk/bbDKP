@@ -9,6 +9,7 @@
 		<title lang="en"><![CDATA[bbDKP]]></title>
 		<title lang="de"><![CDATA[bbDKP]]></title>
 		<title lang="fr"><![CDATA[bbDKP]]></title>
+		<title lang="it"><![CDATA[bbDKP]]></title>
 		<description lang="en"><![CDATA[bbDKP 1.3.1 is a Dragon Kill system Mod for your phpBB3 Bulletin board.
 
 features : Integration of Game, Guild and DKP management facilites into your phpBB3 Forum.
@@ -91,11 +92,19 @@ EQDkp (c) 2003 The EqDkp Project Team]]></description>
 			<target-version>3.0.12</target-version>
 		</installation>
 		<link-group>
-			<link type="language" href="contrib/fr.xml" lang="fr">Français</link>
-			<link type="language" href="contrib/de.xml" lang="de">Deutsch</link>
-			<link type="language" href="contrib/it.xml" lang="it">Italiano</link>			
-			<link type="template" href="contrib/prosilver.xml" lang="en">Prosilver</link>
-			<link type="contrib" href="contrib/bbdkp_1305_to_131/update.xml" lang="en">Update 1.3.0.5->1.3.1</link>			
+			<link type="template" href="contrib/styles/prosilver.xml" lang="en">Prosilver instructions</link>
+			<link type="template" href="contrib/styles/jade.xml" lang="en">Jade</link>			
+			<link type="language" href="contrib/languages/it.xml" lang="en">Italian language pack</link>
+			<link type="language" href="contrib/languages/fr.xml" lang="en">French language pack</link>
+			<link type="language" href="contrib/languages/de.xml" lang="en">German language pack</link>
+			
+			<link type="contrib" href="contrib/upgrade/bbdkp_1305_to_131.xml" lang="en">Upgrade 1.3.0.5 - 1.3.1</link>
+			<link type="contrib" href="contrib/upgrade/bbdkp_1304_to_131.xml" lang="en">Upgrade 1.3.0.4 - 1.3.1</link>	
+			<link type="contrib" href="contrib/upgrade/bbdkp_1303_to_131.xml" lang="en">Upgrade 1.3.0.3 - 1.3.1</link>	
+			<link type="contrib" href="contrib/upgrade/bbdkp_1302_to_131.xml" lang="en">Upgrade 1.3.0.2 - 1.3.1</link>	
+			<link type="contrib" href="contrib/upgrade/bbdkp_1301_to_131.xml" lang="en">Upgrade 1.3.0.1 - 1.3.1</link>	
+			<link type="contrib" href="contrib/upgrade/bbdkp_130_to_131.xml" lang="en">Upgrade 1.3.0 - 1.3.1</link>	
+			<link type="contrib" href="contrib/upgrade/bbdkp_128pl2_to_131.xml" lang="en">Upgrade 1.2.8-pl2 - 1.3.1</link>				
 		</link-group>
 	</header>
 	<action-group>
