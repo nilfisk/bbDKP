@@ -61,7 +61,7 @@ class blockFactory extends \bbdkp\admin\Admin
         $template->assign_var('S_BPSHOW', false);
         if (isset($config['bbdkp_gameworld_version']))
         {
-            if ($config['bbdkp_zone_block_show'] == 1)
+            if ($config['bbdkp_portal_bossprogress'] == 1)
             {
                 include($phpbb_root_path . 'includes/bbdkp/block/bossprogressblock.' . $phpEx);
                 $template->assign_var('S_BPSHOW', true);
@@ -75,7 +75,8 @@ class blockFactory extends \bbdkp\admin\Admin
                 $user->add_lang(array('mods/raidplanner'));
                 if (!class_exists('\bbdkp\views\raidplanner\rpblocks', false))
                 {
-                    include($phpbb_root_path . 'includes/bbdkp/views/raidplanner/block/rpblocks.' . $phpEx);
+                    //display the blocks
+                    include($phpbb_root_path . 'includes/bbdkp/block/rpblocks.' . $phpEx);
                 }
                 $blocks = new \bbdkp\views\raidplanner\rpblocks();
                 $blocks->display();
