@@ -52,12 +52,10 @@ class ucp_dkp extends \bbdkp\admin\Admin
      */
     function main($id, $mode)
     {
-        global $db, $user, $auth, $template, $config, $phpbb_root_path, $phpbb_admin_path, $phpEx;
+        global $db, $user, $auth, $template, $config, $phpbb_root_path, $phpEx;
 
         // Attach the language files
         $user->add_lang(array('mods/dkp_admin', 'mods/dkp_common', 'acp/common'));
-
-
         $guilds = new \bbdkp\controller\guilds\Guilds();
 
         $guildlist = $guilds->guildlist(1);
@@ -215,7 +213,7 @@ class ucp_dkp extends \bbdkp\admin\Admin
 
                     if($submit)
                     {
-                        // add/update character
+                        // add character
                         if (!check_form_key('characteradd'))
                         {
                             trigger_error('FORM_INVALID');
@@ -251,8 +249,6 @@ class ucp_dkp extends \bbdkp\admin\Admin
                         $newmember->member_armory_url = utf8_normalize_nfc(request_var('member_armorylink', '', true));
                         $newmember->phpbb_user_id = $user->data['user_id'];
                         $newmember->member_status = request_var('activated', 0) > 0 ? 1 : 0;
-
-                        $newmember->Armory_getmember();
                         $newmember->Makemember();
 
                         if ($newmember->member_id > 0)
@@ -275,6 +271,7 @@ class ucp_dkp extends \bbdkp\admin\Admin
 
                     if($update)
                     {
+                        //update
                         if (!check_form_key('characteradd'))
                         {
                             trigger_error('FORM_INVALID');
@@ -296,7 +293,6 @@ class ucp_dkp extends \bbdkp\admin\Admin
                         $updatemember->member_title = utf8_normalize_nfc(request_var('member_title', '', true));
                         $updatemember->member_realm = utf8_normalize_nfc(request_var('realm', '', true));
                         $updatemember->member_region = request_var('region_id', '');
-                        $updatemember->member_status = request_var('activated', 0) > 0 ? 1 : 0;
                         $updatemember->member_guild_id =request_var('member_guild_id', 0);
                         $updatemember->member_rank_id = request_var('member_rank_id',99);
                         $updatemember->member_level = request_var('member_level', 0);
@@ -307,6 +303,9 @@ class ucp_dkp extends \bbdkp\admin\Admin
                         $updatemember->member_comment = utf8_normalize_nfc(request_var('member_comment', '', true));
 
                         $updatemember->Armory_getmember();
+
+                        //override armory status
+                        $updatemember->member_status = request_var('activated', 0) > 0 ? 1 : 0;
                         $updatemember->Updatemember($oldmember);
 
                         meta_refresh(1, $this->u_action . '&amp;member_id=' . $updatemember->member_id);

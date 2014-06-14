@@ -97,11 +97,11 @@
         xmlhttp.open("GET", strURL, true);
         // send to server
         xmlhttp.send(null);
-
     }
 
-
-    /* called from GetRank when state changed */
+    /**
+     * called from GetRank when state changed
+     **/
     function stateChanged()
     {
         if (xmlhttp.readyState==4) //request complete
@@ -111,8 +111,6 @@
                 //remove select options
                 var rsel = document.getElementById('rankselect');
                 rsel.options.length = 0;
-
-
                 //receive xml
                 xmlDoc=xmlhttp.responseXML;
                 var game_id = '';
@@ -121,22 +119,19 @@
                 for (var i = 0; i < ranks.length; i++)
                 {
                     var rank = ranks[i];
-                    var game_id = rank.getElementsByTagName("rank_game_id")[0].firstChild.nodeValue;
+                    var game_id = rank.getElementsByTagName("game_id")[0].firstChild.nodeValue;
+                    var game_name = rank.getElementsByTagName("game_name")[0].firstChild.nodeValue;
                     var rankid = rank.getElementsByTagName("rank_id")[0].firstChild.nodeValue;
                     var rankname = rank.getElementsByTagName("rank_name")[0].firstChild.nodeValue;
                     // add the options
                     rsel.options[i] = new Option(rankname,rankid, true, false);
                 }
 
-                var oFormObject = document.forms['character_add'];
-                oFormObject.elements["game_id"].value = game_id;
-
                 document.getElementById('game_id').value = game_id;
+                document.getElementById('game_id_span').innerHTML = game_id;
+                document.getElementById('game_name').value = game_name;
                 GetClassRace(game_id);
 
-
-
-                var a = 1;
             }
             else
             {
@@ -260,8 +255,9 @@
                 <dl>
                     <dt><label for="game_id">{L_GAME}:</label></dt>
 
-                    <dd><input type="hidden" name="game_id" id="game_id"  value="{GAME_ID}"  />&nbsp; {GAME_ID} &nbsp;
-                     <input readonly type="text" name="gamename" id="gamename" size="50" value="{GAME}" class="input" /></dd>
+                    <dd><input type="hidden" name="game_id" id="game_id"  value="{GAME_ID}"  />
+                        &nbsp; <span id="game_id_span">{GAME_ID}</span> &nbsp;
+                     <input readonly type="text" name="game_name" id="game_name" size="50" value="{GAME}" class="input" /></dd>
                 </dl>
 
                 <dl>
@@ -346,10 +342,6 @@
                     <dd><textarea name="member_comment" id="member_comment" type="text" rows="5" cols="10" style="width: 80%" class="input">{MEMBER_COMMENT}</textarea></dd>
 
                 </dl>
-
-
-
-
                 <input type="hidden" name="hidden_member_id" value="{MEMBER_ID}" />
                 {S_FORM_TOKEN}
                 <dl>
